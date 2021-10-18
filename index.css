@@ -529,7 +529,7 @@ footer .redes-footer .fa-instagram:hover{
         position:fixed;
         border-radius: 0 0 10px;
         box-shadow:10px 0 2px -25px black;
-        transform:translateX(-120%);
+        transform:translateX(-140%);
         transition: all 300ms cubic-bezier(1,0,0,1);
     }
 
@@ -650,7 +650,6 @@ footer .redes-footer .fa-instagram:hover{
         left:10px;
         padding-top: 90px;
         
-
     }
 
 
