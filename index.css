@@ -64,9 +64,9 @@ header {
     bottom: 0;
     background: rgba(0, 0, 0, 0.466);
     display:flex;
-    z-index: 10;
+    z-index: 15;
     transition: opacity .3s .9s;
-    transform:translateY(-150%);
+    transform:translateY(-180vh);
     transition: transform .8s;
     
 }
