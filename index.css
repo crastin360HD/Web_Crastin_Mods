@@ -34,7 +34,7 @@ header {
 
 
 .logo {
-    width:30%;
+    width:20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,118 +56,75 @@ header {
 /*Modal animado*/
 
 
-.flex {
-    width: 100%;
-    height:100%;
-    display:flex;
-    justify-content: space-between;
-    align-items:center;
-    
-}
-
-.text-cover {
-    font-size:30px;
-    margin-bottom:5px;
-    padding:5px;
-}
-
-.modal {
-    display:none;
-    position:fixed;
-    z-index:1;
+.modal-global{
+    position: fixed;
     left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background: rgba(0, 0, 0,.4);
-    
-}
-
-.contenido-modal {
-    position:relative;
-    background-color: #fefefe;
-    margin:auto;
-    width: 30%;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
-    animation-name:modal;
-    animation-duration: 1s;
-
-}
-
-.content-modal {
-    width:100%;
-    margin: auto;
+    top: 0;
+    right:0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.466);
     display:flex;
-    padding: 10px;
+    z-index: 10;
+    transition: opacity .3s .9s;
+    transform:translateY(-120%);
+    transition: transform .8s;
 }
 
-.content-modal img {
-    width:20%;
+.show-modal{
+    transform: translate(0);
+    transition:transform .8s .4s;
+}
+
+.container-modal {
+    /*max-width: 600px;
+    max-width:90%;*/
+    margin: auto;
+    background: #fff;
+    padding:3rem 1.5em;
+    place-items: center;
+    /*max-width:600px;
+    max-height: 90%;*/
+    width:600px;
+    height:450px;
+    display: grid;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform .5s;
+    grid-auto-columns: 100%;
+}
+
+.container-modal img {
+    width:40%;
     align-items: center;
+    margin: auto;
     border-radius: 50%;
 }
 
-.boton-modal {
-    margin: 25px;
-    background: #00ccff;
-    width:170px;
-    text-align: center;
-    padding-top: 7px;
-    color:white;
-    border-radius: 10px;
+.container-modal a {
     text-decoration: none;
+    color: #00ff22;
+    padding:10px 9%;
+    border: #00ff22 solid 2px;
+    border-radius: 6px;
+    transition: .2s;
+
 }
 
-.boton-modal:hover{
-    background: rgb(255, 72, 0);
-    text-decoration: none;
-    color: white;
-}
-
-
-
-@keyframes modal{
-    from{top:-330px; opacity:0;}
-    to{top:0; opacity:1;}
-}
-
-.close {
-    color:#f2f2f2;
-    font-size:30px;
-    font-weight: bold;
-    position:relative;
-    left:-10px;
-    background: #ff8800;
-    border-radius:50%;
-    width:35px;
-    text-align: center;
-}
-
-.close:hover{
-    color: #ffffff;
-    text-decoration: none;
-    cursor:pointer;
-    background: #cf0000;
-}
-
-.modal-header {
-    width:415px;
-    color:#f2f2f2;
-    background:tomato
+.container-modal a:hover{
+    background: #00ff22;
+    color: #fff;
     
 }
 
-.p-cover {
-    text-align:justify;
-    padding: 10px;
+.copy_link{
+    position:absolute;
+    margin:auto;
+    top:0;
+    left:0;
+    right:-200px;
+    bottom:0;
+    
 }
-
-.modal-fotter {
-    background:tomato;
-    color:white;
-    padding:10px
-}
-
 
 /*Menu de navegacion*/
 
@@ -500,13 +457,6 @@ footer .redes-footer .fa-instagram:hover{
 
 
 
-@media screen and (max-width:1200px){
-    .menu ul li a {
-        font-size:12px;
-    }
-}
-
-
 @media screen and (max-width:900px){
     .menu a {
     font-size:15px; 
@@ -586,7 +536,7 @@ footer .redes-footer .fa-instagram:hover{
 
     .logo{
         position:absolute;
-        left:10px;
+        left:25px;
     }
 
     .busqueda {
@@ -679,6 +629,17 @@ footer .redes-footer .fa-instagram:hover{
 
     .buscar:hover input {
         width:160px;
+    }
+
+    /*Reponsy modal*/
+
+    .container-modal {
+        margin:10px;
+        margin-top: 90px;
+    }
+
+    .container-modal {
+        padding: 2em 1.5em;
     }
 
 

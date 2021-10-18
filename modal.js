@@ -1,21 +1,15 @@
-let modal = document.getElementById('MiModal');
-let flex = document.getElementById('flex');
-let abrir = document.getElementById('boton-cover');
-let cerrar = document.getElementById('close');
+let modal = document.querySelector('.modal-global');
+let abrir_modal = document.querySelector('.boton-cover');
+let cerrar_modal = document.querySelector('.close')
 
 
-abrir.addEventListener('click', function(){
-    modal.style.display = "block";
-       
+abrir_modal.addEventListener('click', ()=>{
+    modal.classList.toggle("show-modal")
 })
 
-cerrar.addEventListener('click', function(){
-    modal.style.display = "none"
+cerrar_modal.addEventListener('click', ()=>{
+    modal.classList.remove("show-modal")
 })
 
-window.addEventListener('click', function(e){
-    console.log(e.target);
-    if(e.target == flex){
-        modal.style.display = "none";
-    }
-})
+console.log(cerrar_modal)
+
