@@ -207,6 +207,23 @@ body {
   opacity: 0;
 }
 
+.Icon_desplegable_movil {
+  position: fixed;
+  top: 15px;
+  width: 35px;
+  right:100px;
+  background:rgb(78, 247, 0);;
+  border-radius:6px;
+  cursor: pointer;
+  transition-property: background;
+  transition-duration: .3s;
+  z-index: 12;
+}
+
+.Icon_desplegable_movil:hover{
+  background:rgb(255, 153, 0)
+}
+
 .menu-movil {
   background: rgba(0, 214, 185, 0.959);
   width: 100%;
@@ -214,6 +231,14 @@ body {
   transition: color 300ms;
   position: fixed;
   z-index: 10;
+  transform: translateY(-120%);
+  transition: transform .3s ;
+  
+}
+
+.show-menu-movil {
+  transform: translateY(0);
+  transition: transform .4s ;
 }
 
 .menu-movil h2 {
@@ -239,10 +264,9 @@ body {
   float: left;
   margin-right: 10px;
   padding: 0 4px;
-  border-bottom: solid 2px rgb(0, 0, 0);
   background:rgb(255, 255, 255);
   border-radius:6px;
-  font-family: 300;
+  font-weight: 300;
 }
 
 .color-interno i {
@@ -404,7 +428,7 @@ body {
   margin: auto;
   justify-content:center;
   border-radius: 10px;
-  transform: translateX(-100%);
+  transform: translateX(-120%);
   transition: transform .4s ease;
 }
 
@@ -789,6 +813,10 @@ p {
     opacity: 1;
   }
 
+  .Icon_desplegable_movil {
+    display: none;
+  }
+
   .container-aside {
     margin: auto;
   }
@@ -904,8 +932,6 @@ p {
     width:100%;
     margin: auto;
   }
-
-  
 
 }
 
