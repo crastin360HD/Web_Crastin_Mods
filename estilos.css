@@ -267,7 +267,7 @@ body {
   padding: 0 4px;
   background:rgb(255, 255, 255);
   border-radius:6px;
-  font-weight: 300;
+  font-weight: 350;
   border-bottom: 2px solid #f2f2f2;
 }
 
@@ -276,10 +276,16 @@ body {
   padding: 0 5px;
 }
 
+.color-interno i:hover{
+  color:white;
+}
+
 .color-interno a:hover {
-  color: rgb(255, 174, 0);
-  transition: color 300ms;
+  color: rgb(255, 255, 255);
+  background: #00b487;
+  transition: color 300ms, background .1s;
   text-decoration: none;
+  
 }
 
 /* Nuestro-servicio*/
@@ -664,7 +670,7 @@ article {
   cursor: pointer;
 }
 
-/*CONTENIDO DE MODS*/
+/*Contenido de mods*/
 
 .content-mods {
   text-align: left;
@@ -687,7 +693,7 @@ article {
   width: 70%;
 }
 
-/*ASIDE*/
+/*Aside*/
 
 .container-aside aside {
   width: 300px;
@@ -1011,6 +1017,10 @@ p {
     margin: 30px;
     height: 80%;
     border-radius: 5px;
+  }
+
+  .color-interno i {
+    color:white
   }
 
   .menu-movil h2 {
