@@ -720,11 +720,12 @@ article {
   transform: translate(100%);
   transition: transform .3s .5s;
   z-index: 15;
+  opacity: 1;
 }
 
 .show {
   transform: translate(0);
-  transition: opacity .4s
+  transition: transform .3s, opacity .3s;
 }
 
 .agregar-imagen {
@@ -817,7 +818,7 @@ article {
 }
 
 
-/* FOOTER */
+/*Footer*/
 
 footer {
   background: rgb(255, 255, 255);
@@ -889,6 +890,7 @@ p {
 }
 
 @media screen and (max-width: 800px) {
+  
   .menu-navegacion {
     width: 70vw;
     height: 100%;
@@ -925,7 +927,7 @@ p {
   }
 
   .titulo {
-    font-size: 40px;
+    font-size: 15px;
   }
   .contenedor-servicio img {
     width: 80%;
@@ -1061,13 +1063,14 @@ p {
   }
 
   .MeNu {
-    background: rgb(0, 212, 96);
+    background: rgb(0, 228, 133);
     margin: 15px;
-    width: 40px;
-    border-radius: 10px;
+    width: 35px;
+    border-radius: 6px;
     position: fixed;
-    box-shadow: 0 0 4px;
-    background-attachment: fixed;
+    box-shadow: 0 0 2px;
+    z-index: 5;
+    
   }
 
   .MeNu:hover {
@@ -1161,7 +1164,7 @@ p {
   }
 
   .titulo {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .subtitulo {
