@@ -21,7 +21,7 @@ body {
 .header {
   width:100%;
   height: 80vh;
-  background-image: url(./Img-optime/waterside-tower.png);
+  background-image: url(./Img-optime/Mod\ pantano_verde.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -79,22 +79,24 @@ body {
 .boton-cover {
   border: none;
   text-decoration: none;
-  background: #00b493;
-  color: white;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
   padding: 5px;
   border-radius: 10px;
   list-style: none;
-  transition: .1s ease;
+  transition: background .2s;
   font-size: 15px;
   font-weight: bold;
-  width:200px
+  width:200px;
+  
 }
 
 .boton-cover:hover {
-  background: #009758;
+  background: #45da00;
   list-style: none;
   color: white;
   text-decoration: none;
+  
 }
 
 .hamburguer {
@@ -199,7 +201,6 @@ body {
   width:70%;
   font-weight: 700;
   font-size: 15px;
-  background: rgba(0, 0, 0, 0.486);
   border-radius: 10px;
 }
 
@@ -426,7 +427,7 @@ body {
 
 .contenido-slider {
   width:100%;
-  height:400px;
+  height:500px;
   display:flex;
   justify-content:space-around;
   align-items: center;
@@ -450,11 +451,6 @@ body {
 
 .contenido-slider > img {
   width:400px;
-}
-
-.img-config {
-  overflow: hidden;
-  
 }
 
 .contenido-slider > section {
