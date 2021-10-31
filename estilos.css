@@ -110,6 +110,7 @@ body {
   box-shadow: 0 0 25px -25px black;
   transition: 0.1s;
   z-index: 12;
+  box-shadow: 0 0 4px -2px;
 }
 
 .hamburguer:hover {
@@ -239,6 +240,7 @@ body {
   transition-property: background;
   transition-duration: .3s;
   z-index: 12;
+  box-shadow: 0 0 4px -2px;
 }
 
 .Icon_desplegable_movil:hover{
