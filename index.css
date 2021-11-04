@@ -65,33 +65,28 @@ header {
     background: rgba(0, 0, 0, 0.466);
     display:flex;
     z-index: 15;
-    transition: opacity .3s .9s;
     transform:translateY(-180vh);
-    transition: transform .8s;
+    transition: transform .5s .6s;
     
 }
 
 .show-modal{
     transform: translate(0);
-    transition:transform .8s .4s;
+    transition:transform .6s .5s;
 }
 
 .container-modal {
-    /*max-width: 600px;
-    max-width:90%;*/
     margin: auto;
     background: #fff;
     padding:3rem 1.5em;
     place-items: center;
-    /*max-width:600px;
-    max-height: 90%;*/
     width:600px;
     height:450px;
     display: grid;
     border-radius: 6px;
     text-align: center;
-    transition: transform .5s;
     grid-auto-columns: 100%;
+    
 }
 
 .container-modal img {
@@ -155,7 +150,6 @@ header {
     position:relative;
     padding-top: 23px;
     
-
 }
 
 .menu nav ul li a i {
@@ -165,16 +159,16 @@ header {
 .menu a {
     color: #fff;
     border-radius: 5px;
-    background:gold;
     padding:10px;
-    
+    background-image: linear-gradient(90deg, #667eea 100%, #6223a1 90%);
+    transition: background .5s
 }
 
 
 .menu a:hover{
-    background:goldenrod;
     color: #fff;
-    transition: .2s;
+    background: #008f75;
+    
 }
 
 .menu img {
@@ -196,50 +190,26 @@ header {
 }
 /*Herramienta de busqueda*/
 
-.buscar input {
-    width: 0px;
-    height:40px;
-    padding: 0 20px;
-    font-size: 15px;
-    color: black;
-    outline: none;
-    border: 1px solid silver;
-    border-radius: 50px;
-    transition: all 0.6s ease;
-    margin-top: 18px;
+.Buscar {
+    width:300px;
+    height:100%;
 }
 
-.btn {
-    width:45px;
+.Buscar input {
     position:absolute;
-    top: 0;
-    right: 0;
-    height:45px;
-    background:rgba(253, 181, 0, 0.993);
-    text-align: center;
-    color: white;
-    border-radius: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    margin-top: 16px;
-    transition: .1s ease;
-    
+    width: 300px;
+    height: 40px;
+    border: solid 2px #8e44ad;
+    outline:none;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 18px;
+    font-weight: 800;
+    padding: 0 10px;
 }
 
-.btn:hover {
-    background:#008f75
-}
-
-.btn img {
-    margin-top:10px;
-}
-
-.buscar:hover input {
-    width:200px
-}
-
-.buscar input:focus {
-    width:200px;
+.icon_buscar {
+    display:none;
 }
 
 /*Portada*/
@@ -313,7 +283,7 @@ header {
     width:100%;
     height:100%;
     margin:auto;
-    padding-top: 40px;
+    padding-top: 20px;
     
 }
 
@@ -337,7 +307,7 @@ header {
 
 .container__content img:hover{
     transform: scale(0.9);
-    transition: transform border .4s ease;
+    transition: all .4s ease;
     border-radius: 20px;
 }
 
@@ -345,14 +315,15 @@ header {
     margin:auto;
     text-align: center;
     padding: 0 10px;
+    
 }
 
 .title {
-    font-size: 30px;
+    font-size: 25px;
     color:rgb(255, 255, 255);
     background: #5443A8;
     padding: 1px 40px;
-    width:50px;
+    width:300px;
     margin:auto;
     border-radius: 15px;
     
@@ -386,6 +357,7 @@ header {
 
 .container-footer {
     width:100%;
+    height: 100%;
     padding: 40px 0;
     background:#f2f2f2;
 }
@@ -477,8 +449,9 @@ footer .redes-footer .fa-instagram:hover{
     }
 
     .header {
-        background:rgb(255, 255, 255);
+        background:white;
         width:100%;
+        
     }
 
     .article-container-cover {
@@ -511,14 +484,48 @@ footer .redes-footer .fa-instagram:hover{
 
     .title {
         font-size: 20px;
+        width: 200px;
     }
 
     .container__items p{
-        text-align: left;
+        text-align: center;
+    }
+
+    /* *Buscar__responsy*/
+
+    .Buscar input {
+        max-width:200px;
+        margin-top: 90px;
+        right:5px;
+        border-color: #616161;
+        box-shadow: 0 0 6px -2px;
+    }
+
+    .search {
+        transform: translateX(160%);
+        transition: transform .5s;
+    }
+
+    .Buscar_show {
+        transform:translateX(5%);
+    }
+
+    .icon_buscar {
+        display:block;
+        position:absolute;
+        right:100px;
+        top: 25px;
+        width: 25px;
+        height:25px;
+        padding: 5px 5px;
+    }
+
+    .icon_buscar:hover{
+        background: #f2f2f2;
+        border-radius: 30px;
     }
 
     /*Menu*/
-
 
     .menu {
         margin-top: 85px;
@@ -568,7 +575,8 @@ footer .redes-footer .fa-instagram:hover{
         font-size:18px;
         width: 90%;
         text-align: center;
-        border-bottom: 5px solid rgb(255, 196, 0);
+        border-bottom: 5px solid rgb(231, 177, 0);
+        background: hsl(44, 100%, 59%);
         
     }
 
@@ -813,8 +821,6 @@ footer .redes-footer .fa-instagram:hover{
         width:130px;
     }
     
-
-
 }
 
 
