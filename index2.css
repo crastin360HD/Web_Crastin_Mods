@@ -165,6 +165,7 @@ nav ul {
     padding-top: 60px;
 }
 
+
 .new__cars_content {
     width:95%;
     height:100%;
@@ -174,17 +175,27 @@ nav ul {
 
 .new__cars img {
     width:320px;
+    height: 100%;
     padding: 20px;
     border-radius: 25px;
     object-fit: cover;
     display: block;
+    cursor:pointer;
+    transform: scale(1);
+    transition: transform .2s;
+}
+
+
+.new__cars img:hover{
+    transform: scale(0.9);
+    transition: transform .5s;
 }
 
 .new__cars {
     width:678px;
     height:100%;
-    margin:0 20px;
     display:flex;
+    margin:0 20px;
     background: #ffffff;
     border-radius: 5px;
     box-shadow: 0 0 6px -4px black;
@@ -341,26 +352,28 @@ hr {
         
     }
     .new__cars {
-        width:80%;
+        width:90%;
         margin:auto;
         margin-bottom: 20px;
+        flex-direction: column;
     }
 
     .new__cars img {
-        width:100%;
+        width: 100%;
         object-fit: cover;
+        
     }
 
     .new__cars__information {
-        display:none;
+        margin-bottom: 40px;
     }
 
     .new__cars__information h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .new__cars__information p {
-        font-size:12px;
+        font-size:15px;
     }
 
     .new__cars__information {
@@ -491,7 +504,7 @@ hr {
         top: 10px;
         background:#C4C4C4;
         border-radius: 30px;
-        padding: 3px;
+        padding:3px;
         cursor:pointer;
         width:25px;
         display:block;

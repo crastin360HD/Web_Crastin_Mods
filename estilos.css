@@ -14,7 +14,7 @@ body {
 
 :root {
   scroll-behavior: smooth;
-  --background-icon-Menu:rgb(0, 153, 107);
+  --background-icon-Menu: #00c43b;
   --background-Menu:rgb(255, 255, 255);
 }
 
@@ -255,7 +255,7 @@ body {
   z-index: 10;
   transform: translateY(-120%);
   transition: transform .3s ;
-  border-top: 3px solid #00c97c;
+  border-left: 3px solid #00c43b;
   
 }
 
@@ -274,8 +274,8 @@ body {
 }
 
 .menu-movil b {
-  color: #00af92;
-  border-bottom: solid 2px #00ceab;
+  color:  #00c43b;
+  border-bottom: solid 2px #00c43b;
 }
 
 .color-interno a {
@@ -287,7 +287,7 @@ body {
   float: left;
   margin-right: 5px;
   padding: 0 10px;
-  background: #00b487;
+  background: #00c43b;
   border-radius:6px;
 }
 
