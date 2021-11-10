@@ -160,8 +160,9 @@ nav ul {
 .new__cars__container {
     width:100%;
     height:100%;
-    margin: 60px 0;
+    margin:auto;
     padding-bottom: 30px;
+    padding-top: 60px;
 }
 
 .new__cars_content {
@@ -172,15 +173,17 @@ nav ul {
 }
 
 .new__cars img {
-    width:300px;
-    padding:20px;
+    width:320px;
+    padding: 20px;
     border-radius: 25px;
+    object-fit: cover;
+    display: block;
 }
 
 .new__cars {
     width:678px;
     height:100%;
-    margin: 0 20px;
+    margin:0 20px;
     display:flex;
     background: #ffffff;
     border-radius: 5px;
@@ -190,6 +193,11 @@ nav ul {
 .new__cars__information {
     padding: 20px 0;
 }
+
+.new__cars__information h2 {
+    padding-bottom: 20px;
+}
+
 
 hr {
     list-style: none;
@@ -265,7 +273,7 @@ hr {
 
     .new__cars img {
         width:100%;
-        height:200px;
+        
     }
 }
 
@@ -325,15 +333,17 @@ hr {
     }
 
     .new__cars_content {
-        width:90%;
+        width:100%;
         height:100%;
         flex-direction: column;
         flex-wrap: wrap;
+        margin:auto;
         
     }
     .new__cars {
+        width:80%;
+        margin:auto;
         margin-bottom: 20px;
-        width:90%;
     }
 
     .new__cars img {
@@ -369,26 +379,27 @@ hr {
     .container__footer {
         width:100%;
         height:100%;
+        flex-direction: column;
         flex-wrap: wrap;
+        margin:auto;
         
     }
 
     .footer__contacts {
         margin:auto;
-        flex-direction: column;
-        flex-wrap: wrap;
-        display:block;
-        padding:50px;
-    }
-
-    .image__absolute {
-        display:none
     }
 
     .logo__footer {
-        width:40%;
-        margin: auto;
+        margin:auto;
+        left:-5px;
+        width:40%
     }
+
+    .image__absolute {
+        display:none;
+        
+    }
+
 
 }
 
@@ -407,6 +418,7 @@ hr {
         background-image: url(./Img_Texture/Vector_tres.svg);
         background-repeat: no-repeat;
         background-position: right;
+        box-shadow: 0 0 6px -2px;
     }
 
     .show__menu {
@@ -432,15 +444,16 @@ hr {
 
     .menu nav ul {
         flex-direction: column;
-        margin:auto;
-        width:70%
+        width:90%;
+        margin:0 -25px;
+        align-items: center;
+        /*left:14px;*/
     }
 
     .menu nav ul li {
         height:10px;
         justify-content: flex-start;
         margin:auto;
-        width:100%;
         text-align:center;
     }
 
@@ -449,7 +462,8 @@ hr {
         padding:5px;
         border-radius:15px;
         display:block;
-        
+        margin:auto;
+        width:120px;
     }
 
     .menu a:hover {
@@ -474,13 +488,15 @@ hr {
     .image__icon__close {
         position:absolute;
         right: 10px;
-        top: 5px;
+        top: 10px;
         background:#C4C4C4;
         border-radius: 30px;
         padding: 3px;
         cursor:pointer;
         width:25px;
         display:block;
+        align-items: center;
+        
     }
 
 
