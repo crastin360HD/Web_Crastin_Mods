@@ -299,21 +299,19 @@ header {
 }
 
 .container__content img {
-    width:400px;
+    width:45%;
     border-radius: 6px;
     margin: 5px 0;
     object-fit: cover;
-    border-left: solid 5px #5443A8;
+    border-left: solid 3px #5443A8;
     cursor:pointer;
-    transform: scale(1);
     transition: all .2s;
+    object-fit: cover;
 }
 
 .container__content img:hover{
-    transform: scale(0.9);
+    transform: translateY(-5%);
     transition: all .4s ease;
-    border-radius: 18px;
-    border-left: solid 2px #5443A8;
 }
 
 .container__items {
@@ -354,6 +352,53 @@ header {
     100%{
         transform: translateY(5px);
     }
+}
+
+/*Container__second*/
+
+.container__second {
+    width:100%;
+    height:100%;
+    margin:auto;
+}
+
+.contenedor__second {
+    width:95%;
+    height:100%;
+    margin:auto;
+    display:flex;
+    margin: 80px 0;
+}
+
+.banner {
+    width:50%;
+    display: flex;
+    margin:auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 6px -3px;
+}
+
+.logo__canal {
+    border-radius:50%;
+    width: 200px;
+    height:200px;
+}
+
+.text {
+    margin:auto;
+    text-align: center;
+}
+
+.text h2 {
+    border-bottom: solid 2px;
+    border-color: #008f75;
+}
+
+.text p {
+    width:500px;
+    text-align: left;
+    padding-top: 20px;
 }
 
 
@@ -475,7 +520,7 @@ footer .redes-footer .fa-instagram:hover{
     }
 
     .container__content img {
-        width:80%;
+        width:50%;
         margin:auto;
     }
 
@@ -536,7 +581,7 @@ footer .redes-footer .fa-instagram:hover{
         left:0px;
         width:60%;
         height:80%;
-        background:rgb(255, 229, 157);
+        background: white;
         position:fixed;
         border-radius: 0 0 10px;
         box-shadow:10px 0 2px -25px black;
@@ -546,12 +591,17 @@ footer .redes-footer .fa-instagram:hover{
 
     .menu a {
         font-size:15px; 
-        }
-
+    }
 
     .logo{
         position:absolute;
         left:25px;
+        top: 5px;
+        cursor:pointer;
+    }
+
+    .logo h1 {
+        font-size:25px;
     }
 
     .busqueda {
@@ -582,22 +632,24 @@ footer .redes-footer .fa-instagram:hover{
         font-size:18px;
         width: 90%;
         text-align: center;
-        background: hsl(44, 100%, 59%);
+        background: white;
+        color: #e67e22;
         border:hsl(44, 100%, 59%);
-        border-bottom: solid 3px white;
+        border-bottom: solid 3px #e67e22;
     }
 
     .menu a:hover{
-        background: rgb(0, 114, 99);
+        background: #e67e22;;
         color:white;
         border:hsl(44, 100%, 59%);
-        border-bottom: solid 3px white;
+        border-bottom: solid 3px #d66c0f;
     }
 
     .menu nav {
-        background:#fff2b7;
+        background:#ffe284;
         border-radius: 10px;
-        height:90%
+        height:90%;
+        
     }
 
     .menu nav {
@@ -675,6 +727,43 @@ footer .redes-footer .fa-instagram:hover{
         
     }
 
+    /*Container__second__responsy*/
+
+    .container__second {
+        width:100%;
+        height:100%;
+        margin:auto;
+    }
+    
+    .contenedor__second {
+        width:95%;
+        height:100%;
+        margin:auto;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .text {
+        width:90%;
+        margin:auto;
+    }
+
+    .text p {
+        margin:auto;
+        width:300px;
+        padding-bottom: 40px;
+    }
+
+    .logo__canal {
+        width:100px;
+        height:100px;
+    }
+
+    .banner {
+        width:80%;
+    }
+    
+
 
 }
 
@@ -711,8 +800,6 @@ footer .redes-footer .fa-instagram:hover{
         width: 50%;
     }
 
-
-
     .menu h2 {
         opacity: 1;
     }
@@ -720,7 +807,10 @@ footer .redes-footer .fa-instagram:hover{
     .container-secction {
         width: 100%;
         height: 100%;
-        
+    }
+
+    .container__content img {
+        width:60%;
     }
 
     .contenedor-imagenes {
