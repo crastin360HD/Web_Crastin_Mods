@@ -310,6 +310,10 @@ body {
   
 }
 
+.log-text img {
+  display:none;
+}
+
 /* Nuestro-servicio*/
 
 .subtitulo-principal {
@@ -1150,8 +1154,9 @@ p {
   }
 
   .log-text img {
+    display:block;
     position:relative;
-    right:-95px;
+    margin:auto;
     top: 40px;
     margin-bottom: 60px;
     width: 50px;
