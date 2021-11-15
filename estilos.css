@@ -642,11 +642,11 @@ article {
   width: 100%;
   padding: 20px;
   padding-bottom: 40px;
-  border-radius: 4px;
+  border-radius: 10px;
   overflow: hidden;
   background:#fff;
   box-shadow: 0 0 10px -4px;
-  border-top: solid 3px #00c090;
+  border-top: solid 10px #00c090;
 }
 
 /*Seccion galeria*/
@@ -1079,6 +1079,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     border: none;
+    box-shadow: 0 0 10px -5px;
   }
 
   .menu-movil:before {
@@ -1090,6 +1091,17 @@ p {
     bottom:0;
     background: #00e1ff59;
     z-index: -10;
+    animation: background__menu 5s infinite ease;
+  }
+
+  @keyframes background__menu {
+    0%{
+      background: #00e1ff59;
+    }
+
+    25%{
+      background: #ffffff67;
+    }
   }
 
   .spread {
@@ -1111,19 +1123,24 @@ p {
     background: #00db80;
   }
 
+  .color-interno {
+    margin:auto;
+    width: 80%;
+  }
+
   .color-interno a {
     display: flex;
     flex-direction: column;
     text-align: center;
     background: #00e2c4de;
     width: 70%;
-    padding: 10px;
+    padding: 5px;
     color: white;
-    border-radius: 20px;
+    border-radius: 15px;
     font-weight: 800;
-    margin: auto;
-    margin: 25px;
+    margin:auto;
     border-bottom: solid #00885fde;
+    margin: 22px;
   
   }
 
