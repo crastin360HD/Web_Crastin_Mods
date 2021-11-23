@@ -222,10 +222,20 @@ header {
     height: 500px;
     position: relative;
     margin-top: 80px;
-    background-image: url(./Img-home/Venus.jpg);
+    background-image: url(./Img-optime/serpiente-3.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.article-container-cover:before {
+    content:"";
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    position: absolute;
+    background-color: #008f754f;
 }
 
 
@@ -246,30 +256,32 @@ header {
 .container-info-cover h2{
     color: white;
     font-size: 35px;
-    border-bottom: solid 3px white;
-    
+    border-bottom: 3px solid white;
 }
 
 .container-info-cover p {
-    color: rgb(218, 218, 218);
+    color: white;
     background: rgba(51, 51, 51, 0.589);
     border-radius: 5px;
     margin:10px 0;
+    padding: 10px;
 }
 
 .boton-cover {
-    background:rgba(0, 245, 184, 0.959);
+    background-color:#00b694;
     border: none;
     text-decoration: none;
     width:150px;
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    transition: .2s;
+    transition: all .5s;
     margin-top: 10px;
     cursor: pointer;
     align-items: center;
     padding: 5px;
+    transform:scale(1);
+    box-shadow: 0 0 10px -1px #00b694;
 }
 
 .boton-cover a {
@@ -278,7 +290,7 @@ header {
 }
 
 .boton-cover:hover {
-    background: #7540A1;
+    transform: scale(0.9)
 }
 
 /*Container__content*/
@@ -857,7 +869,7 @@ footer .redes-footer .fa-instagram:hover{
 }
 
 @media screen and (max-width:400px){
-    .header -header-content {
+    .header{
         width:100%;
     }
 
@@ -865,6 +877,11 @@ footer .redes-footer .fa-instagram:hover{
     .article-container-cover {
         width: 100%;
         background-size: cover;
+    }
+
+    .container-info-cover h2 {
+        font-size:30px;
+        margin-bottom: 10px;
     }
 
 
@@ -876,7 +893,6 @@ footer .redes-footer .fa-instagram:hover{
 
     .busqueda {
         opacity:1;
-            
     }
 
     .text-container {
