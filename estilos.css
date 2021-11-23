@@ -1200,11 +1200,9 @@ p {
 
   .color-interno {
     margin: 30px;
-    height: 70%;
+    height: 78%;
     border-radius: 20px;
     background-color: rgba(155, 255, 250, 0.37);
-    box-shadow: 0 0 6px -4px;
-    
   }
 
   .color-interno i {
