@@ -15,7 +15,7 @@ body {
 :root {
   scroll-behavior: smooth;
   --background-icon-Menu: #00c43b;
-  --background-Menu:rgb(255, 255, 255);
+  --background-Menu:#fff;
 }
 
 .header {
@@ -53,7 +53,7 @@ body {
 }
 
 .contenedor-service {
-  background: rgb(255, 255, 255);
+  background: white;
 }
 
 .conten-text {
@@ -76,26 +76,31 @@ body {
 }
 
 .boton-cover {
-  border: none;
   text-decoration: none;
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  padding: 5px;
+  background: #3cbe00;
+  color: #ffffff;
+  padding: 3px;
   border-radius: 10px;
-  list-style: none;
-  transition: background .2s;
+  transition: background .5s;
   font-size: 15px;
   font-weight: bold;
   width:200px;
+  box-shadow: 0 0 10px  #3cbe00;
+  animation: espaciado__letras 3s infinite ease;
+}
+
+@keyframes espaciado__letras {
   
+  50% {
+    letter-spacing: 1px;
+  }
 }
 
 .boton-cover:hover {
-  background: #45da00;
-  list-style: none;
+  background: #00a33f;
+  text-decoration: none;
   color: white;
   text-decoration: none;
-  
 }
 
 .hamburguer {
@@ -124,34 +129,37 @@ body {
   right: 0;
   width: 200px;
   height: 70%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   transition: transform 0.3s ease-in-out;
   transform: translateY(-140%);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.466);
+  box-shadow: 0 0 10px -5px black;
   border-radius: 6px 0 6px 6px;
   z-index:15;
 
 }
 
 .label {
-  width:60px
+  width:45px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 10px #C4C4C4;
+  border-radius: 10px;
+  padding: 3px;
 }
 
 .borde {
-  background: rgb(81, 221, 0);
+  background: #00d60b;
   width: 150px;
   border-radius: 10px;
   text-align: center;
   transition: background .2s;
-  
 }
 
 .borde i {
-  padding: 0 5px
+  padding: 0 5px;
 }
 
 .spread {
@@ -165,16 +173,11 @@ body {
 .menu-navegacion a {
   color: #ffffff;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
-  text-decoration: 0;
-  list-style: 0;
-  margin: 10px;
+  text-decoration: none;
   margin-bottom: 30px;
   transition: color 300ms;
   font-weight: 700;
-  
 }
-
 
 .borde:hover {
   background: #ff6600;
@@ -185,7 +188,7 @@ body {
 }
 
 .menu-navegacion a:hover {
-  color: rgb(235, 235, 235);
+  color: white;
   text-decoration: none;
 }
 
@@ -314,7 +317,7 @@ body {
   display:none;
 }
 
-/* Nuestro-servicio*/
+/*Nuestro-servicio*/
 
 .subtitulo-principal {
   width: 500px;
