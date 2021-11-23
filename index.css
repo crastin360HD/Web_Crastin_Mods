@@ -55,7 +55,6 @@ header {
 
 /*Modal animado*/
 
-
 .modal-global{
     position: fixed;
     left:0;
@@ -64,62 +63,82 @@ header {
     bottom: 0;
     background: rgba(0, 0, 0, 0.466);
     display:flex;
-    z-index: 15;
-    transform:translateY(-180vh);
-    transition: transform .5s .6s;
-    
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: opacity .3s .5s;
+    opacity: 0;
+    pointer-events: none;
+    --transform: translateY(-180vh);
+    --transition: transform .8s;
 }
 
 .show-modal{
-    transform: translate(0);
-    transition:transform .6s .5s;
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .3s;
+    --transform: translateY(0);
+    --transition: transform .8s .5s;
 }
 
 .container-modal {
     margin: auto;
     background: #fff;
+    background-image: url(./Icons_img_svg/Vector_picos.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding:3rem 1.5em;
     place-items: center;
     width:600px;
-    height:450px;
+    height:400px;
     display: grid;
     border-radius: 6px;
     text-align: center;
     grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: transform .3s;
+    transition: var(--transition);
+}
+
+.info__modal {
+    width:90%;
+    height:100%;
+    padding-bottom: 20px;
     
 }
 
 .container-modal img {
-    width:40%;
-    align-items: center;
+    width:30%;
     margin: auto;
     border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-modal a {
+.close {
     text-decoration: none;
-    color: #00ff22;
-    padding:10px 9%;
+    color: #ffffff;
+    padding:5px 40px;
     border: #00ff22 solid 2px;
     border-radius: 6px;
     transition: .2s;
-
+    background-color: #00ff22;
 }
 
-.container-modal a:hover{
-    background: #00ff22;
-    color: #fff;
-    
+.close:hover{
+    background: transparent;
+    color: #00ff22;
+    box-shadow: 0 0 20px -5px #00ff22;
 }
 
-.copy_link{
-    position:absolute;
-    margin:auto;
-    top:0;
-    left:0;
-    right:-200px;
-    bottom:0;
-    
+.container-modal img:nth-of-type(2){
+    width:25px;
+    position: relative;
+    right: -70px;
+    top: -40px;
+    cursor:pointer;
 }
 
 /*Menu de navegacion*/
@@ -127,17 +146,15 @@ header {
 .menu {
     height: 80px;
     margin-right: 60px;
-        
 }
 
 .menu nav ul {
     height: 100%;
-    
 }
 
 .menu nav ul {
     height: 100%;
-    display: flex;
+    display:flex;
     list-style: none;
 }
 
@@ -149,7 +166,6 @@ header {
     align-items: center;
     position:relative;
     padding-top: 23px;
-    
 }
 
 .menu nav ul li a i {
@@ -201,14 +217,13 @@ header {
     position:absolute;
     width: 200px;
     height: 40px;
-    border: solid 2px #8e44ad;
+    border: solid 2px #008f75;
     outline:none;
     text-decoration: none;
     border-radius: 6px;
     margin-top: 18px;
     font-weight: 800;
     padding: 0 10px;
-
 }
 
 .icon_buscar {
@@ -237,7 +252,6 @@ header {
     position: absolute;
     background-color: #008f754f;
 }
-
 
 
 .container-info-cover {
@@ -445,28 +459,26 @@ header {
 .container-footer footer .redes-footer .icon-redes-footer {
     font-size: 20px;
     margin:20px;
-    background: #ffffff;
     width:50px;
     height:50px;
     display: flex;
     justify-content:center;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: white;
     border-radius: 100%;
-
 }
 
-footer .redes-footer .fa-facebook-f:hover {
+footer .redes-footer .fa-facebook-f {
     background:#41579A;
     color: #fff;
 }
 
-footer .redes-footer .fa-google-plus-g:hover{
+footer .redes-footer .fa-google-plus-g{
     background:#DE4C34;
     color:#fff;
 }
 
-footer .redes-footer .fa-instagram:hover{
+footer .redes-footer .fa-instagram{
     background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
     color: #fff;
 }
@@ -727,9 +739,6 @@ footer .redes-footer .fa-instagram:hover{
 
     .container-modal {
         margin:10px;
-        margin-top: 90px;
-        width:100%;
-        height:380px;
     }
 
     .container-modal {
@@ -737,11 +746,11 @@ footer .redes-footer .fa-instagram:hover{
     }
 
     .copy_link {
-        position:absolute;
-        margin: 5px;
-        left:10px;
-        padding-top: 90px;
-        
+        left:45px;
+    }
+
+    .container-modal img:nth-of-type(2){
+        width:20px;
     }
 
     /*Container__second__responsy*/
