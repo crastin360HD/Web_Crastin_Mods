@@ -615,18 +615,7 @@ footer .redes-footer .fa-instagram{
     .Buscar_show {
         transform:translateX(15%);
     }
-
-    .icon_buscar {
-        right: -110px;
-        background-color: #999;
-        width:20px
-    }
-
-    .icon_buscar:hover{
-        background: #f2f2f2;
-        border-radius: 30px;
-    }
-
+    
     /*Menu*/
 
     .menu {
@@ -917,6 +906,17 @@ footer .redes-footer .fa-instagram{
     .buscar:hover input {
         width:130px;
     }
+
+    .icon_buscar {
+        right: -80px;
+        background-color: #999;
+        width:20px
+    }
+
+    .icon_buscar:hover{
+        background: #f2f2f2;
+        border-radius: 30px;
+    }
     
 
 
@@ -1000,6 +1000,9 @@ footer .redes-footer .fa-instagram{
     .buscar:hover input {
         width:130px;
     }
+
+    .icon_buscar {
+        right: -50px;
     
 }
 
@@ -1049,8 +1052,6 @@ footer .redes-footer .fa-instagram{
         text-align:left;
     }
 
-    
-
 }
 
 @media screen and (max-width:420px){
@@ -1061,4 +1062,5 @@ footer .redes-footer .fa-instagram{
     .modal {
         margin-top: 50px;
     }
+}
 }
