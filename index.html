@@ -8,6 +8,7 @@
     <meta name="description" content="Encuentra los mejores mods para Minecraft 1.16.5 y 1.12.2 que esperas!! entra a esta pagina y disfrutalos">
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" user-scalable=no/>
     <meta name="keywords" content="Minecraft,mods,aventura, mods 1.12.2, mods 1.16.5,Crastin Play">
+    <title>Crastin Play-Oficial-web-page</title>
     <!--CSS-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -20,7 +21,6 @@
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!--Icon-web-->
     <link rel="shortcut icon" href="./Icons_img_svg/Crastin Play logo.ico">
-    <title>Crastin Play-Oficial-web-page</title>
 </head>
 <body>
     <!--Header-->
@@ -47,11 +47,11 @@
             </div>
             
             <div class="Buscar">
-            
+
+                <img src="./Img-home/bx-search-alt.svg" alt="" class="icon_buscar">
                 <input type="text"placeholder="Buscar" class="search">
                 
             </div>
-            <img src="./Img-home/bx-search-alt.svg" alt="" class="icon_buscar">
             
             
         </div>
@@ -62,9 +62,12 @@
     
     <div class="article-container-cover">
         <div class="container-info-cover">
-            <h2 data-aos="zoom-in" >¡¡Descubre lo imposible!!</h2>
-            <p>Te ofrecemos un buen contenido de mods, para que puedas disfrutar con tus amigos, con sus respectivas descargas directas, puedes apoyarnos suscribiendote a nuestro canal de Youtube</p>
-            <button class="boton-cover" id="boton-cover"><a href="#">Follow me</a></button>
+            <div class="contenedor__info">
+                <h2 data-aos="zoom-in" >¡¡Descubre lo imposible!!</h2>
+                <p>Te ofrecemos un buen contenido de mods, para que puedas disfrutar con tus amigos, con sus respectivas descargas directas, puedes apoyarnos suscribiendote a nuestro canal de Youtube</p>
+                <button class="boton-cover" id="boton-cover"><a href="#">Follow me</a></button>
+            </div>
+            <img class="container__image" src="./Icons_img_svg/undraw_christmas_tree_-56-sw.svg" alt="">
         </div>
     </div>
     
@@ -133,8 +136,7 @@
         </div>
     </div>
 
-    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f2f2f2;"></path></svg></div>
-    
+    <div class="vector__svg" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f2f2f2;"></path></svg></div>
     <div class="container-footer">
         <footer>
             <div class="logo-footer">
@@ -153,6 +155,8 @@
             </div>
         </footer>
     </div>
+
+    <!-- Custon JS -->
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
@@ -162,6 +166,9 @@
     <script>
         AOS.init();
     </script>
+
+    <!-- Musica custon -->
+    <embed class="musica" src="./Music__web.mp3" type="audio/mp3" autostarty="true" loop="true" volumen="80" width="0" height="0">
 
 </body>
 </html>
