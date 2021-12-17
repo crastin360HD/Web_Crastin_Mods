@@ -1189,6 +1189,16 @@ footer .redes-footer .fa-instagram{
         width:130px;
     }
 
+    /* Imagen seccion interactiva */
+
+    .image__seccion {
+        width:70%;
+    }
+
+    .items p {
+        text-align: left;
+    }
+
 }
 
 /*Modal responsy*/
