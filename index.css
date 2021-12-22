@@ -11,6 +11,16 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+body::-webkit-scrollbar{
+    width:8px;
+    background:#f2f2f2;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #1abc9c;
+    border-radius:10px;
+}
+
 /*Header*/
 
 header {
@@ -423,6 +433,18 @@ header {
 .show__interactive {
     opacity: 1;
     pointer-events: unset;
+}
+
+
+/* Estilizando barra de scroll */
+
+.contenedor__interactive::-webkit-scrollbar{
+    width:7px;
+}
+
+.contenedor__interactive::-webkit-scrollbar-thumb {
+    background:#1abc9c;
+    border-radius: 5px;
 }
 
 .contenedor__interactive {
