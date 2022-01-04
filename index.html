@@ -9,12 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" user-scalable=no/>
     <meta name="keywords" content="Minecraft,mods,aventura, mods 1.12.2, mods 1.16.5,Crastin Play">
     <title>Mods para Minecraft 1.12.2 - 1.16.1 Crastin Play</title>
-    <!--CSS-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <!--Custon CSS-->
     <link rel="stylesheet" href="./index.css">
     <!--Google-fonts-->
-    
+
     <!--Font-awesome-->
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <!--Box-icon-->
@@ -23,209 +21,214 @@
     <link rel="shortcut icon" href="./Icons_img_svg/Crastin Play logo.ico">
 </head>
 <body>
-    <!--Header-->
-    <header class="header">
-        <div class="header-content">
-            <img class="busqueda" src="./Icons_img_svg/icons8-menú.svg" alt="">
-            
-            <div class="logo">
-                <a href="https://www.youtube.com/channel/UCmX_TO-WP4ItDoDEjH2s9oA" target="_bank"><h1>Crastin<b>Play</b></h1></a>
-            </div>
+    <!-- Header -->
 
-            <!-- Menu -->
+    <header>
+        <div class="header__container">
             
-            <div class="menu">
-                
-                <nav>
-                    <ul>
-                        <h2>Search</h2>
-                        <li><a href="./index.html">Principal</a>
-                        <li><a href="#">Shaders-all</a>
-                        <li><a href="./index2.html">Mods-all</a>
-                        <li><a href="#">FORO</a>
-                    </ul>
-                </nav>
-                
-            </div>
-
-            <!-- Buscar -->
-            
-            <div class="Buscar">
-
-                <img src="./Img-home/bx-search-alt.svg" alt="" class="icon_buscar">
-                <input type="text"placeholder="Buscar" class="search">
-                
-            </div>
-            
-            
-        </div>
-        
-    </header>
+            <div class="container">
+                <!-- Logo -->
     
-    <!--Portada-->
-    
-    <div class="article-container-cover">
-        <div class="container-info-cover">
-            <div class="contenedor__info">
-                <h2 data-aos="zoom-in" >¡¡Descubre lo imposible!!</h2>
-                <p>Te ofrecemos un buen contenido de mods, para que puedas disfrutar con tus amigos, con sus respectivas descargas directas, puedes apoyarnos suscribiendote a nuestro canal de Youtube</p>
-                <button class="boton-cover" id="boton-cover"><a href="#">Follow me</a></button>
-            </div>
-            <img class="container__info__image" src="./Icons_img_svg/undraw_christmas_tree_-56-sw.svg" alt="">
-        </div>
-    </div>
-    
-    <!--Modal-->
-    
-    <div class="modal-global">
-    
-        <div class="container-modal">
-        
-            <img src="./Img-home/Logo desing 2.png" alt="">
-            
-            <img onclick="location.href='https://www.youtube.com/channel/UCmX_TO-WP4ItDoDEjH2s9oA'" src="./Img-home/bx-link-external.svg" alt="" class="copy_link"></a>
-        
-            <h2>¡¡Desubre nuestro canal!!</h2>
-            <p>Suscribere a nuestro canal de youtube Crastin Play, en e el cual podras encontar mucho contenido relacionado con lo que encuentras asi, Videojuegos, Tops, tutoriales y futuros videos de programacion que esperas!!!</p>
-            <a class="close" href="#">Cerrar</a>
-        
-        </div>
-    </div>
-
-    <!-- Seccion interactiva -->
-    <div class="show__black__"></div>
-
-    <div class="container__interactive">
-        <div class="contenedor__interactive">
-            <span class="Cerrar" >X</span>
-            <div class="show"></div>
-            
-            <section class="contenedor__seccion">
-                <img class="contenedor__image" src="./Img-home/Notifications_Isometric.svg" alt="">
-                
-                <div class="items">
-                    <h2>¡¡Descubre mucho mas!!</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum odit ullam beatae labore distinctio praesentium, autem aliquam esse nobis impedit quo iusto. Ex omnis laboriosam rem, dolorum quod nulla deleniti eos et sequi ad error delectus? Reiciendis, aliquid. Sint, consequuntur.</p>
-                    <img class="expandir" src="./Icons_img_svg/bx-expand-vertical.svg" alt="">
-                    
-                    <div class="figure__">
-
-                        <figure class="figure__container">
-                            <img class="image__seccion" src="./Img-home/ice-and-fire-dragons-13.jpg" alt="">
-    
-                        </figure>
-    
-                        <figure class="figure__container">
-                            <img class="image__seccion" src="./Img-home/Elefante 2.png" alt="">
-                        </figure>
-    
-                        <figure class="figure__container" >
-                            <img class="image__seccion" src="./Img-home/Barco-aldeanos.png" alt="">
-    
-                        </figure>
-                        
-                        <figure class="figure__container" >
-                            <img class="image__seccion" src="./Img-home/Brontosaurio.jpg" alt="">
-    
-                        </figure>
-    
-                        <figure class="figure__container">
-                            <img class="image__seccion" src="./Img-home/Cocatris.png" alt="">
-    
-                        </figure>
-    
-                        <figure class="figure__container">
-                            <img class="image__seccion" src="./Img-home/Tortuga.png" alt="">
-    
-                        </figure>
+                <div id="logo" class="logo">
+                    <div class="logo__container">
+                        <h2>Crastin Play</h2>
+                        <img src="./Img-home/MesaCraftteo 1.png" alt="">
                     </div>
-                    
                 </div>
-            </section>
+                
+                <!-- Menu__navegation -->
+                
+                <img id="IconMenu" class="icon__menu" src="./Img-home/Pull Down.svg" alt="">
+                <div id="menu" class="menu">
+                    <img id="cerrar" class="cerrarMenu" src="./Img-home/close_black.svg" alt="">
+                    <!-- <img class="themeIcon__menu" src="./Img-home/Icon__luna.svg" alt="" title="Theme Dark"> -->
+                    <i class="far fa-moon themeIcon__menu"></i>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Mods</a></li>
+                            <li><a href="#">Texture</a></li>
+                            <li><a href="#">Shaders</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <!-- Search Input -->
+                
+                <img id="iconInput" class="icon__input" src="./Img-home/Icon_Search.svg" alt="">
+                <div id="buscador" class="header__input">
+                    <input class="buscarInput" type="text" placeholder="¿Que deseas buscar?">
+                    <img class="icon__search" src="./Img-home/Icon_Search.svg" alt="">
+                </div>
+                
+                <!-- Ligth__header -->
+    
+                <div class="ligth__header">
+                    <img class="Icon__ligth__header" src="./Img-home/Icon__luna.svg" alt="">
+                </div>
+
+            </div>
+            
+            <!-- Header__items -->
+
+            <div class="header__items">
+                <div class="header__items__container">
+                    <h2>¡El contenido que mas te gusta ver esta aqui!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, dolorum? Molestiae, et repellendus ullam mollitia eos explicabo praesentium libero dicta voluptates quas minus voluptate sapiente alias magnam amet nisi optio, sit repudiandae quidem unde quos. Corporis iure quos quia magnam, dolores non esse accusantium, pariatur velit, voluptates quaerat suscipit doloribus!</p>
+                </div>
+            </div>
+
+            <!-- Public__header -->
+
+            <div class="public__header">
+                <div class="cerrar">X</div>
+                <div class="container__public">
+                    <div class="items__public">
+                        <h2>Siguenos en nuestro canal de youtube y encuentra mas contenido</h2>
+                        <a href="#">Suscribete</a>
+                    </div>
+                    <img src="./Img-home/Cerdo_ccexpress 1.png" alt="">
+                </div>
+            </div>
+
+            <!-- Menu__derecho -->
+            
+            <div id="rigth__Menu" class="rigth__menu">
+                <img id="iconRight" class="icon__menu__derecho" src="./Img-home/Chevron Left.svg" alt="">
+                <img id="icon__arriba" src="./Img-home/Flecha__arriba.svg" alt="">
+                <img id="icon__abajo" src="./Img-home/Flecha__abajo.svg" alt="">
+                <div class="rigth__menu__container">
+                    <div class="items__menu">
+                        <a class="n-youtube" href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a class="n-discord" href="#">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a class="n-email" href="#">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a class="n-facebook" href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <video autoplay muted loop class="background">
+            <source src="./video_example.mp4" type="video/mp4">
+        </video> -->
+
+    </header>
+
+    <div class="container__content">
+        <div class="alert__menu">
+            <h2>Contenido ofrecido<i class="fas fa-ellipsis-v icon_Menu"></i></h2>
+        </div>
+        <!-- Menu contenido -->
+        <div class="menu__container">
+            <div class="container__menu">
+                <div class="meNu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Mods para Minecraft 1.12.2-1.16</a></li>
+                            <li><a href="#">Shaders para Minecraft 1.12.2.16</a></li>
+                            <li><a href="#">Texturas para Minecraft 1.12.2-1.16</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor__content">
+            <h2 class="title__cover__absolute">Mods para Minecraft</h2>
+            <div class="cover__container">
+                <img class="image__cover__container" src="./Img-home/Elefante 2.png" alt="">
+                <div class="info__cover">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis dicta, enim sequi, in voluptas deleniti est, animi modi ad nihil quo tenetur earum aperiam quia voluptate nesciunt officia quam doloremque obcaecati. Dolorem corporis quidem architecto eveniet dolor, vel voluptatum.</p>
+                    <a class="btn__cover"><span></span>Ir al sitio</a>
+                </div>
+            </div>
         </div>
     </div>
 
-    
-    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #f2f2f2;"></path></svg></div>
-    
-    <!--Container__content-->
-    <div class="container__section">
-        <div class="container__content">
-            <img src="./Img-home/More-planets.png" class="container__image">
-            <div class="container__items">
-                <h2 class="title">Mods para Minecraft</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui distinctio, quae eaque reiciendis repudiandae tenetur labore aut maxime corrupti vel. Repellendus, reiciendis! Quibusdam magnam veritatis facere molestiae id, animi earum!</p>
-            </div>
+    <div class="container__content">
+        <div class="alert__menu">
+            <h2>Contenido ofrecido<i class="fas fa-ellipsis-v icon_Menu"></i></h2>
         </div>
-    </div>
-    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-100.17,111.02 C162.24,129.77 612.02,54.77 569.13,109.03 L496.32,198.84 L0.00,150.00 Z" style="stroke: none; fill: #f2f2f2f2;"></path></svg></div>    
-    <div class="container__section">
-        <div class="container__content">
-            <div class="container__items">
-                <h2 class="title">Shaders para Minecraft</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui distinctio, quae eaque reiciendis repudiandae tenetur labore aut maxime corrupti vel. Repellendus, reiciendis! Quibusdam magnam veritatis facere molestiae id, animi earum!</p>
+        
+        <div class="contenedor__content">
+            <h2 class="title__cover__absolute">Shaders para Minecraft</h2>
+            <div class="cover__container">
+                <img class="image__cover__container" src="./Img-home/Image__Shader.png" alt="">
+                <div class="info__cover">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis dicta, enim sequi, in voluptas deleniti est, animi modi ad nihil quo tenetur earum aperiam quia voluptate nesciunt officia quam doloremque obcaecati. Dolorem corporis quidem architecto eveniet dolor, vel voluptatum.</p>
+                    <a class="btn__cover"><span></span>Ir al sitio</a>
+                </div>
             </div>
-            <img src="./Img-home/Shaders.jpg" alt="">
-        </div>
-    </div>
-    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-100.17,111.02 C162.24,129.77 612.02,54.77 569.13,109.03 L496.32,198.84 L0.00,150.00 Z" style="stroke: none; fill: #f2f2f2;"></path></svg></div>
-    <div class="container__section">
-        <div class="container__content">
-            <img src="./Img-home/My Post.png" alt="">
-            <div class="container__items">
-                <h2 class="title">Descargas</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui distinctio, quae eaque reiciendis repudiandae tenetur labore aut maxime corrupti vel. Repellendus, reiciendis! Quibusdam magnam veritatis facere molestiae id, animi earum!</p>
-            </div>
-        </div>
-    </div>
-    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-33.57,50.81 C94.52,152.45 426.35,25.16 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f2f2f2;"></path></svg></div>
-    
-    <!--Seccion del canal-->
-    
-    <div class="container__second">
-        <div class="contenedor__second">
-            <img class="banner" src="./Img-home/cODING_pLAY....png" alt="">
-            
-            <div class="text">
-                <img class="logo__canal" src="./Img-home/Logotipo de juego en azul y blanco.png" alt="">
-                <h2>Suscribete a nuestro futuro canal</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas amet nostrum deleniti ab atque? Voluptatum excepturi obcaecati, qui accusantium reiciendis ex, debitis quaerat est voluptate sint deserunt ipsa ducimus voluptatibus, non nam! Eveniet ut tempore doloremque, animi ratione officia obcaecati!</p>
-            </div>
-            
         </div>
     </div>
 
-    <div class="vector__svg" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #f2f2f2;"></path></svg></div>
-    <div class="container-footer">
-        <footer>
-            <div class="logo-footer">
-                <img src="./Icons_img_svg/Logotipo Juegos Láser en Negro y Rojo.png" alt="">
+    <div class="container__content">
+        <div class="alert__menu">
+            <h2>Contenido ofrecido<i class="fas fa-ellipsis-v icon_Menu"></i></h2>
+        </div>
+        
+        <div class="contenedor__content">
+            <h2 class="title__cover__absolute">Texturas para Minecraft</h2>
+            <div class="cover__container">
+                <img class="image__cover__container" src="./Img-home/Image__texture.jpg" alt="">
+                <div class="info__cover">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quis dicta, enim sequi, in voluptas deleniti est, animi modi ad nihil quo tenetur earum aperiam quia voluptate nesciunt officia quam doloremque obcaecati. Dolorem corporis quidem architecto eveniet dolor, vel voluptatum.</p>
+                    <a class="btn__cover"><span></span>Ir al sitio</a>
+                </div>
             </div>
-            
-            <div class="redes-footer">
-                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
-            </div>
-            
-            <hr>
-            <div class="derechos" >
-            <h4>&copy;Todos los derechos reservados-2020-2021</h4>
-            </div>
-        </footer>
+        </div>
     </div>
 
+    <br>
+    <footer>
+        <div class="container__footer">
+            <div class="footer__info">
+                <img src="./Img-home/Logo desing 2.png" alt="">
+                <div class="items__footer__info">
+                    <h2>crastin play</h2>
+                    <p>construimos para crecer..</p>
+                </div>
+            </div>
+            <div class="footer__social">
+                <div class="social">
+                    <h4>social netwokrs</h4>
+                    <div class="social__nav">
+                        <ul>
+                            <li><a href="#">Facebook.com</a></li>
+                            <li><a href="#">Example@gmail.com</a></li>
+                            <li><a href="#">@instragram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__social">
+                <div class="social">
+                    <h4>herramientas</h4>
+                    <div class="social__nav">
+                        <ul>
+                            <li><a href="#">maquetacion html</a></li>
+                            <li><a href="#">diseño:figma,css</a></li>
+                            <li><a href="#">interaccion:javascript</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="derechos">
+            <h3>&copy;Derechos reservados 2019-2022</h3>
+        </div>
+    </footer>
     <!-- Custon JS -->
     
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <script src="./interaction.js"></script>
-    <script src="./menu-3.js"></script>
-    <script src="./modal.js"></script>
-    <script src="./buscar.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
+    <script src="./main.js"></script>
+    <script src="./mainInput.js"></script>
 </body>
 </html>
