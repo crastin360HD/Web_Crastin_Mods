@@ -662,14 +662,10 @@ footer {
         transition: all .2s ease;
         font-weight: bold;
         color: white;
-        background: black;
+        
     }
 
-    .themeIcon__menu:hover{
-        background: rgba(0, 0, 0, 0.534);
-        color: white;
-        rotate: 180deg;
-    }
+  
 
     .Icon__ligth__header {
         display: none;
