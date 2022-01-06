@@ -993,7 +993,7 @@ footer {
     }
 
     .public__header {
-        width:340px;
+        width:270px;
     }
 
     .items__public h2 {
@@ -1035,6 +1035,10 @@ footer {
     .menu {
         background-size: 180px;
     }
+
+    .header__items {
+        height:300px
+    }
 }
 
 /* !Tamaño de 300px */
@@ -1050,7 +1054,7 @@ footer {
     /* Public__header */
 
     .public__header{
-        width:270px
+        width:270px;
     }
 
     .public__header {
@@ -1067,10 +1071,12 @@ footer {
         font-size: 0.8em;
     }
 
-    
+    .title__cover__absolute {
+        top:20px;
+    }
 }
 
-/* reponsy height */
+/* !reponsy height */
 
 @media screen and (max-height:600px){
 
@@ -1078,7 +1084,40 @@ footer {
 
     .title__cover__absolute {
         position:absolute;
-        top: 20px;
+        top: 10px;
+    }
+
+    /* Public */
+
+    .public__header {
+        display: block;
+        width:270px;
+        box-shadow: 0 0 10px -5px;
+        top: 120px;
+    }
+
+    .--modify {
+        margin-top: 220px;
+    }
+
+    .container__content {
+        margin-bottom: 20px;
+    }
+
+    /* Header__items */
+
+    .header__items {
+        height:300px;
+    }
+}
+
+@media screen and (max-height:500px){
+    .public__header {
+        top: -90px;
+    }
+
+    .title__cover__absolute {
+        top: -40px;
     }
 }
 
@@ -1120,11 +1159,15 @@ footer {
         box-shadow: 0 0 10px -5px;
     }
 
-    .cover__container {
-        height:600px;
-    }
-
     .info__cover {
         width:500px;
+    }
+}
+
+
+@media screen and (max-height:300px){
+
+    .title__cover__absolute {
+        top: -60px;
     }
 }
