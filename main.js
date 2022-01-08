@@ -19,8 +19,20 @@ cloSe.addEventListener("click",()=>{
 
 let iconMenuDerecho = document.getElementById("iconRight");
 let menuDerecho = document.getElementById("rigth__Menu")
+let iconArriba = document.getElementById("icon__arriba");
+let iconAbajo = document.getElementById("icon__abajo");
+let items = document.getElementById("itemsMenu")
 
+items.style.transition = ".4s";
 
 iconMenuDerecho.addEventListener("click",()=>{
     menuDerecho.classList.toggle("showMenuDerecho")
+})
+
+iconArriba.addEventListener("click",()=>{
+    items.style.transform = "translateY(-160px)"
+})
+
+iconAbajo.addEventListener("click",()=>{
+    items.style.transform = "translateY(160px)"
 })
