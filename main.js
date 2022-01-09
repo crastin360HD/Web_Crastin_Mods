@@ -26,7 +26,16 @@ let items = document.getElementById("itemsMenu")
 items.style.transition = ".4s";
 
 iconMenuDerecho.addEventListener("click",()=>{
-    menuDerecho.classList.toggle("showMenuDerecho")
+    menuDerecho.classList.add("showMenuDerecho");
+    icon_Menu.style.opacity = "0";
+})
+
+window.addEventListener('click', e=>{
+    if(menuDerecho.classList.contains('showMenuDerecho')
+        &&e.target != menuDerecho &&e.target != iconMenuDerecho &&e.target != iconArriba &&e.target !=iconAbajo){
+        menuDerecho.classList.remove("showMenuDerecho");
+        icon_Menu.style.opacity = "1";
+    }
 })
 
 iconArriba.addEventListener("click",()=>{

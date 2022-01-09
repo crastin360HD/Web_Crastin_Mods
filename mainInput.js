@@ -7,6 +7,5 @@ let logo = document.getElementById("logo");
 iconInput.addEventListener("click",()=>{
     
     buscador.classList.toggle("show__input");
-    
 })
 
