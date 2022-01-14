@@ -24,9 +24,9 @@
     <!-- Header -->
 
     <header>
-        <div class="header__container">
+        <div id="headerContainer" class="header__container">
             
-            <div class="container">
+            <div id="container" class="container">
                 <!-- Logo -->
                 
                 <div id="logo" class="logo">
@@ -37,9 +37,9 @@
                 </div>
                 
                 <!-- Menu__navegation -->
-                
                 <img id="IconMenu" class="icon__menu" src="./Img-home/Pull Down.svg" alt="">
                 <div id="menu" class="menu">
+                    <img id="iconArrowMenu" class="IconMenuArrow" src="./Img-home/arrow_botton.svg" alt="">
                     <img id="cerrar" class="cerrarMenu" src="./Img-home/close_black.svg" alt="">
                     
                     <nav>
@@ -63,7 +63,8 @@
                 <!-- Ligth__header -->
     
                 <div class="ligth__header">
-                    <img class="Icon__ligth__header" src="./Img-home/Icon__luna.svg" alt="">
+                    <img title="Dark Mode" id="iconDark" class="Icon__ligth__header" src="./Img-home/Icon__luna.svg" alt="">
+                    <img id="iconDarkNormal" class="Icon__ligth__sun" src="./Img-home/bxs-sun.svg" alt="">
                 </div>
 
             </div>
@@ -144,7 +145,7 @@
 
     </header>
 
-    <div class="container__content --modify">
+    <div id="containerCont" class="container__content --modify">
         <div class="alert__menu">
             <h2>Contenido ofrecido<i class="fas fa-ellipsis-v icon_Menu"></i></h2>
         </div>
@@ -173,8 +174,8 @@
             </div>
         </div>
     </div>
-
-    <div class="container__content">
+    
+    <div id="containerCont" class="container__content">
         <div class="alert__menu">
             <h2>Contenido ofrecido<i class="fas fa-ellipsis-v icon_Menu"></i></h2>
         </div>
@@ -191,7 +192,7 @@
         </div>
     </div>
 
-    <div class="container__content">
+    <div id="containerCont" class="container__content">
         <div class="alert__menu">
             <h2>Contenido ofrecido<i class="fas fa-ellipsis-v icon_Menu"></i></h2>
         </div>
@@ -209,7 +210,7 @@
     </div>
 
     <br>
-    <footer>
+    <footer id="footerHeader">
         <div class="container__footer">
             <div class="footer__info">
                 <img src="./Img-home/Logo desing 2.png" alt="">
@@ -252,5 +253,6 @@
     
     <script src="./main.js"></script>
     <script src="./mainInput.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>

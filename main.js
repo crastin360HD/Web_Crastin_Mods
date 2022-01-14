@@ -3,7 +3,11 @@
 let icon_Menu = document.getElementById("IconMenu");
 let MeNu = document.getElementById("menu");
 let cloSe = document.getElementById("cerrar");
+let iconArrouwMenu = document.getElementById("iconArrowMenu");
 
+iconArrouwMenu.addEventListener("click",()=>{
+    MeNu.classList.toggle("showMenuResponsy")
+})
 
 icon_Menu.addEventListener('click',()=>{
     MeNu.classList.toggle("show__menu");
@@ -39,9 +43,33 @@ window.addEventListener('click', e=>{
 })
 
 iconArriba.addEventListener("click",()=>{
-    items.style.transform = "translateY(-160px)"
+    items.style.transform = "translateY(-160px)";
 })
 
 iconAbajo.addEventListener("click",()=>{
-    items.style.transform = "translateY(160px)"
+    items.style.transform = "translateY(160px)";
+})
+
+// Custon Theme Dark
+
+let iconDark = document.getElementById("iconDark");
+let iconLigth = document.getElementById("iconDarkNormal");
+let containerHeader = document.getElementById("container");
+let headerContainer = document.getElementById("headerContainer")
+let footerHeader = document.getElementById("footerHeader");
+
+containerHeader.style.transition = "all .3s ease";
+
+iconDark.addEventListener("click",()=>{
+    document.body.classList.toggle("dark");
+    containerHeader.classList.toggle("themeContainer");
+    headerContainer.classList.toggle("darkHeader");
+    footerHeader.classList.toggle("footerDark");
+})
+
+iconLigth.addEventListener("click",()=>{
+    document.body.classList.toggle("dark");
+    containerHeader.classList.toggle("themeContainer");
+    headerContainer.classList.toggle("darkHeader")
+    footerHeader.classList.toggle("footerDark");
 })
