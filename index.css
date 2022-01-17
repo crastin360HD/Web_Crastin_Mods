@@ -50,6 +50,8 @@ header {
     width:100%;
     height:245px;
     display: flex;
+    align-items: top;
+    justify-content:center;
 }
 
 .sub__container {
@@ -262,7 +264,7 @@ input::-webkit-input-placeholder {
 }
 
 .menu nav {
-    height:90px;
+    height:100px;
 }
 
 .menu nav ul {
