@@ -1198,7 +1198,7 @@ footer {
 
     .icon__alert__menu {
         position:fixed;
-        right:0;
+        left: 5px;
         top: -50px;
         width:40px;
         height:40px;
@@ -1209,6 +1209,11 @@ footer {
         justify-content:center;
         position: absolute;
         box-shadow: 0 0 10px -5px;
+    }
+
+    body.dark .icon__alert__menu {
+        color: white;
+        background: #34495e;
     }
 
     /* Estilos del Footer en celular */
