@@ -84,6 +84,7 @@ function scrollMenu() {
 
         let scroll = document.documentElement.scrollTop;
         let menuScroll = document.getElementById("alertMenu");
+        let alertMenuNav = document.getElementById("alertMenuNav");
 
         menuScroll.style.transition = "all .3s ease";
         
@@ -92,7 +93,8 @@ function scrollMenu() {
             menuScroll.style.opacity = "1"
         }else {
             menuScroll.style.transform = "translateX(-120%)";
-            menuScroll.style.opacity = "0"
+            menuScroll.style.opacity = "0";
+            alertMenuNav.classList.remove("showAlertMenu")
         }
 
         // console.log(scroll);

@@ -189,7 +189,11 @@ body.dark .public__header h2{
     color: white;
 }
 
-body.dark .items__footer__info h2, p {
+body.dark .items__footer__info h2 {
+    color: white;
+}
+
+body.dark .items__footer__info p {
     color: white;
 }
 
@@ -206,6 +210,21 @@ body.dark .derechos {
 }
 
 body.dark .derechos h3 {
+    color: white;
+}
+
+/* Alert Menu Dark */
+
+body.dark .alert__menu {
+    background: #34495e;
+    border-color: #2c3e50;
+}
+
+body.dark .title__alert__menu {
+    color: white;
+}
+
+body.dark .icon__alert__menu {
     color: white;
 }
 
