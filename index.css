@@ -331,7 +331,7 @@ input::-webkit-input-placeholder {
     width: 900px;
     height:auto;
     margin: 0 50px;
-    background:rgba(0, 0, 0, 0.250);
+    /* background:rgba(0, 0, 0, 0.250); */
     border-radius: 4px;
     padding: 20px;
 }
@@ -633,82 +633,88 @@ input::-webkit-input-placeholder {
     margin-bottom: 20px;
 }
 
-/* Contenido ofrecido */
-
-.menu__container {
-    position:fixed;
-    top: 53px;
-    width:300px;
-    height:200px;
-    background: #f2f2f2;
-    z-index: 5;
-    border-radius:10px;
-    box-shadow: 0 0 10px -5px;
-    margin: 0 70px;
-    border-radius:0 0 10px;
-    display: none;
-}
-
-.container__menu {
-    margin: auto;
-    width:100%;
-    height:100%;
-    display: flex;
-}
-
-.meNu {
-    margin: auto;
-}
-
-.meNu ul li {
-    list-style: none;
-}
-
-.meNu a {
-    text-decoration: none;
-    color:white;
-    background: #3D00EA;
-    border-radius: 20px;
-    padding: 3px 20px;
-    display: block;
-    width:240px;
-    text-align: center;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size:0.8em;
-}
-
 /* Alert Menu*/
 
 .alert__menu {
     position:fixed;
-    top: 0;
-    z-index: 12;
-    width:440px;
+    z-index: 16;
+    top: 20px;
+    left:20px;
+    width:400px;
     height:auto;
-    margin: 20px 0;
-    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content:center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px -5px;
+    border-bottom: solid 2px #53DA00;
+    transform: translateX(-120%);
+    cursor: pointer;
 }
 
-.alert__menu h2 {
-    text-align: center;
-    border-radius: 20px;
-    padding: 3px;
-    background: #f2f2f2;
-    font-size: 18px;
-    width:80%;
-    margin: auto;
-    display: flex;
-    justify-content:space-between;
+.container__alert {
+    width:100%;
+    display:flex;
     align-items: center;
-    padding-right: 10px;
-    padding-left: 10px;
+    justify-content:space-between;
+}
+
+.title__alert__menu {
+    text-align: center;
+    font-size: 1.2em;
     text-transform: capitalize;
 }
 
-.icon_Menu {
-    cursor: pointer;
+.icon__alert__menu {
+    cursor:pointer;
+}
+
+.alertMenuNav {
+    overflow: hidden;
+}
+
+.alertMenuNav {
+    width:90%;
+    height:0;
+}
+
+.showAlertMenu {
+    overflow: none;
+    height:auto;
+}
+
+.alertMenuNav li {
+    list-style: none;
+}
+
+.alertMenuNav a {
+    text-decoration: none;
+    border:solid 2px #8e44ad;
+    color: #8e44ad;
+    display: block;
+    padding: 3px;
+    border-radius: 20px;
+    margin: 10px 0;
+    width:300px;
+    text-align: center;
+    background: white;
+    transition: all .1s ease;
+}
+
+.alertMenuNav a:hover {
+    background:#8e44ad;
+    color: white;
+}
+
+.alertMenuNav nav ul {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
 }
 
 /* Estilos footer */
@@ -1158,6 +1164,34 @@ footer {
         font-size: 1em;
     }
 
+    /* Estillos para Alert Menu */
+
+    .alert__menu {
+        top: 60px;
+        left: 0;
+        margin: 0 10px;
+        border: none;
+    }
+
+    .title__alert__menu {
+        display: none;
+    }
+
+    .icon__alert__menu {
+        position:fixed;
+        right:0;
+        top: -50px;
+        width:40px;
+        height:40px;
+        background: #f2f2f2;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        position: absolute;
+        box-shadow: 0 0 10px -5px;
+    }
+
     /* Estilos del Footer en celular */
 
     footer {
@@ -1307,6 +1341,17 @@ footer {
         background-size: 180px;
     }
 
+    /* Alert Menu */ 
+
+    .alert__menu {
+        width:90%;
+    }
+
+    .alertMenuNav a{
+        font-size:1em;
+        width:240px;
+    }
+
 }
 
 /* !Tamaño de 300px */
@@ -1336,6 +1381,17 @@ footer {
 
     .title__cover__absolute {
         top:20px;
+    }
+
+    /* Alert Menu */
+
+    .alert__menu {
+        width:85%;
+    }
+
+    .alertMenuNav a {
+        font-size:0.9em;
+        width:200px;
     }
 }
 
@@ -1458,5 +1514,13 @@ footer {
     .show_rigth::after{
         width:30px;
         height:50px;
+    }
+}
+
+
+@media screen and (max-height:300px){
+
+    .public__header {
+        top: -80px;
     }
 }

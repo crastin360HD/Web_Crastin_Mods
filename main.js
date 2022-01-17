@@ -73,3 +73,44 @@ iconLigth.addEventListener("click",()=>{
     headerContainer.classList.toggle("darkHeader")
     footerHeader.classList.toggle("footerDark");
 })
+
+
+// Custon Alert_Menu
+
+
+function scrollMenu() {
+    
+    window.addEventListener('scroll', ()=>{
+
+        let scroll = document.documentElement.scrollTop;
+        let menuScroll = document.getElementById("alertMenu");
+
+        menuScroll.style.transition = "all .3s ease";
+        
+        if(scroll > 700){
+            menuScroll.style.transform = "translateX(0)";
+            menuScroll.style.opacity = "1"
+        }else {
+            menuScroll.style.transform = "translateX(-120%)";
+            menuScroll.style.opacity = "0"
+        }
+
+        // console.log(scroll);
+
+    })
+}
+
+scrollMenu()
+
+// Custon Scroll Menu container
+
+let iconMenuColapse = document.getElementById("menuColapse");
+
+let alertMenuNav = document.getElementById("alertMenuNav");
+
+let alertMenu = document.getElementById("alertMenu")
+
+alertMenu.addEventListener("click", ()=>{
+
+    alertMenuNav.classList.toggle("showAlertMenu");
+})
