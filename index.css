@@ -1209,6 +1209,7 @@ footer {
         justify-content:center;
         position: absolute;
         box-shadow: 0 0 10px -5px;
+        text-align: center;
     }
 
     body.dark .icon__alert__menu {
