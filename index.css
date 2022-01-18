@@ -1200,8 +1200,8 @@ footer {
         position:fixed;
         left: 5px;
         top: -50px;
-        width:40px;
-        height:40px;
+        width:25px;
+        height:25px;
         background: #f2f2f2;
         border-radius: 50%;
         display: flex;
@@ -1210,6 +1210,7 @@ footer {
         position: absolute;
         box-shadow: 0 0 10px -5px;
         text-align: center;
+        padding: 3px;
     }
 
     body.dark .icon__alert__menu {
