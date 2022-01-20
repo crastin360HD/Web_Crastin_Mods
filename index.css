@@ -389,6 +389,7 @@ input::-webkit-input-placeholder {
     border-radius: 10px;
     position:relative;
     margin: auto;
+    margin: 0 10px;
 }
 
 .container__public {
