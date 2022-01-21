@@ -21,6 +21,10 @@ body {
     transition: all .3s ease;
 }
 
+:root {
+    scroll-behavior: smooth;
+}
+
 
 /* *Estilizando el header */
 
@@ -350,7 +354,6 @@ input::-webkit-input-placeholder {
     width: 900px;
     height:auto;
     margin: 0 50px;
-    /* background:rgba(0, 0, 0, 0.250); */
     border-radius: 4px;
     padding: 20px;
 }
@@ -700,11 +703,11 @@ input::-webkit-input-placeholder {
 .alertMenuNav {
     width:90%;
     height:0;
+    transition: all .2s ease-in;
 }
 
 .showAlertMenu {
-    overflow: none;
-    height:auto;
+    height:180px;
 }
 
 .alertMenuNav li {
